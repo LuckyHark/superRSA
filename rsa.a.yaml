@@ -1,0 +1,23 @@
+---
+name:  rsa
+title: Response Surface Analysis
+menuGroup: SuperRSA
+version: '1.0.0'
+jas: '1.2'
+
+options:
+    - name: data
+      type: Data
+
+    - name: dep
+      title: Dependent Variable
+      type: Variable
+
+    - name: groupA
+      title: Independent Variable 1
+      type: Variable
+
+    - name: groupB
+      title: Independent Variable 2
+      type: Variable
+...

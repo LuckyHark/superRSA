@@ -1,0 +1,31 @@
+title: Response Surface Analysis
+name: rsa
+jus: '3.0'
+stage: 0
+compilerMode: aggressive
+children:
+  - type: VariableSupplier
+    persistentItems: false
+    stretchFactor: 1
+    children:
+      - type: TargetLayoutBox
+        label: Dependent Variable
+        children:
+          - type: VariablesListBox
+            name: dep
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Independent Variable 1
+        children:
+          - type: VariablesListBox
+            name: groupA
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Independent Variable 2
+        children:
+          - type: VariablesListBox
+            name: groupB
+            maxItemCount: 1
+            isTarget: true

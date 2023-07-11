@@ -1,0 +1,83 @@
+---
+name:  rsa
+title: Response Surface Analysis
+jrs:   '1.1'
+
+items:
+    - name:  text
+      title: 响应面分析结果
+      type:  Preformatted
+
+    - name: tableS
+      title: Model Summary
+      type: Table
+      rows: 5
+      columns:
+        - name: var
+          title: 'Info'
+          type: text
+        - name: fit
+          title: 'Comments'
+          type: text
+
+    - name:  tableA
+      title: Polynomial Regression Model
+      type:  Table
+      rows:  6
+      columns:
+        - name: var
+          title: 'Variables'
+          type: text
+        - name: label
+          title: 'label'
+          type: text
+        - name: est
+          title: 'b'
+          type: number
+        - name: se
+          title: 'SE'
+          type: text
+        - name: tvalue
+          title: 't'
+          type: text
+        - name: pvalue
+          title: 'p'
+          type: text
+          format: zto,pvalue
+
+    - name: tableB
+      title: Curvature and Slope
+      type:  Table
+      rows:  5
+      notes:
+            a1a2: a1,a2 is the slope and curvature of congruence line; a3, a4 is the slope and curvature of incongruence line; a5 suggests the degree of lateral shift.
+      columns:
+        - name: var
+          title: 'Indicator'
+          type: text
+        - name: label
+          title: 'label'
+          type: text
+        - name: est
+          title: 'b'
+          type: number
+        - name: se
+          title: 'SE'
+          type: text
+        - name: tvalue
+          title: 'z'
+          type: text
+        - name: pvalue
+          title: 'p'
+          type: text
+          format: zto,pvalue
+
+
+    - name: plot
+      title: Response Surface Plot
+      type: Image
+      width:  800
+      height: 600
+      renderFun: .plot
+
+...
